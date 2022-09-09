@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.body {
+font-family: Arial, Helvetica, sans-serif;
+}
+		.header {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+				.bgHeader {
+					width: 100%;
+				}
+				.contener {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					position: absolute;
+					width: 953px;
+					height: 100%;
+				}
+								.logoWhite {
+									background-image: url(../images_disaine/konctrukt.svg);
+								}
+								.logoBlack {
+									background-image: url(../images_disaine/logoblack.svg);
+								}
+								.logoSettings {
+									width: 103px;
+									height: 23px;
+									background-repeat: no-repeat;
+									background-position: center;
+									background-size: contain;
+								}
+								.bottomLogo {
+									position: absolute;
+									bottom: 90%;
+								}
+								.logoWhite::after {
+									content: "";
+									border: 11px solid transparent; 
+									border-right: 9px solid #00A4E5;
+									position: absolute;
+									height: 0;
+									left: 72px;
+									top: 1px;
+								}
+								.header_text_H1 {
+									font-size: 60px;
+									color: #FFFFFF;
+									margin: 10px 0;
+								}
+								.header_text_Paragraf {
+									font-size: 16px;
+									color: #FFFFFF;
+								}
+
+		.nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 auto;
+			width: 953px;
+			height: 65px;
+		}
+				.menu {
+					display: flex;
+					justify-content: space-between;
+					width: 450px;
+				}
+				.linkMenu {
+					color: #48555B;
+					font-size: 12px;
+					text-decoration: none;
+					font-weight: bold;
+				}
+				.linkMenu:hover {
+					color: #00A4E5;
+				}
+		.footer {
+			margin: 0 auto;
+			width: 953px;
+			height: 715px;
+		}
+				.head {
+					display: flex;
+					justify-content: center;
+				}
+						.footerH2 {
+							display: flex;
+							flex-direction: column-reverse;
+							align-items: center;
+							color: #48555B;
+							font-size: 18px;
+							font-weight: bold;
+							text-align: center;
+							margin: 57px 0 92px 0;
+						}
+				.footerContent {
+					margin-bottom: 119px;
+					display: flex;
+					justify-content: space-between;
+				}
+						.footerText {
+							width: 432px;
+							display: flex;
+							justify-content: space-between;
+							flex-direction: column;
+						}
+								.konstruct {
+									font-weight: bold;
+									letter-spacing: 0.1875px;
+									color: #48555B;
+									font-size: 25px;
+								}
+								.blueText:hover {
+									color: #16ACE8;
+								}
+								.lorem {
+									letter-spacing: 0.1875px;
+									font-size: 16px;
+									color: #48555B;
+									line-height: 25px;
+								}
+						.footerImg {
+							position: relative;
+							width: calc(953px / 2);
+							display: flex;
+							justify-content: space-between;
+							margin-top: 25px;
+						}
+						.shadow {
+							box-shadow:0px 0px 4px 1px #48555B
+						}
+								.footerContenerH3Text {
+									width: calc(986px / 2);
+									position: absolute;
+									display: flex;
+									justify-content: space-around;
+									right: 0;
+									top: 23px;
+								}
+										.footerH3 {
+											letter-spacing: 1px;
+											line-height: 29px;
+											width: 90px;
+											color:white;
+											font-size: 24px;
+											font-weight: bold;
+										}
+				.footerEnd {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+						.textInlain {
+							display: flex;
+							justify-content: space-around;
+						}
+						.footerEnd_H4_Text {
+							font-size: 18px;
+							line-height: 21px;
+							letter-spacing: 2.30625px;
+							color: #48555B;
+						}
+						.pseudoElement {
+							display: flex;
+							flex-direction: column-reverse;
+							align-items: center;
+						}
+						.footerParagraf {
+							width: 405px;
+							letter-spacing: 0.2px;
+							font-size: 13px;
+							line-height: 19px;
+							color: #48555B;
+							margin-left: 150px;
+						}
+						.button {
+							background-color: #00A4E5;
+							text-decoration: none;
+							color: #FFFFFF;
+							font-size: 15px;
+							width: 150px;
+							height: 40px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							box-shadow: 0 0 5px 2px #48555B;
+						}
+						.button:hover {
+							box-shadow: 0 0 12px 5px #48555B;
+							font-size: 15.3px;
+						}
+				.pseudoElement::before,.footerH2::before {
+					content: "";
+					height: 3px;
+					width: 50px;
+					background-color: #00A4E5;
+					margin-top: 4px;
+					
+
+				}
